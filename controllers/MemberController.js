@@ -36,7 +36,7 @@ export const AddMember = async (req, res) => {
       firstName,
       lastName,
       email,
-      phoneNumber,
+      phoneNumber: phoneNumber === "" ? null : phoneNumber,
       description,
       image: secure_url,
       work,
