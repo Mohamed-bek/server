@@ -26,7 +26,6 @@ const memberSchema = new Schema(
     phoneNumber: {
       type: String,
       unique: true,
-      default: null,
       sparse: true,
     },
     department: {
